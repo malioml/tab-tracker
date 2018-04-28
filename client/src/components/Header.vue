@@ -1,14 +1,14 @@
 <template>
     <v-toolbar fixed class="cyan" dark>
         <v-toolbar-title class="mr-4">
-            <v-btn dark flat to="root">
+            <v-btn dark flat :to="{name: 'root'}">
                 TabTracker
             </v-btn>
         </v-toolbar-title>
 
         <v-toolbar-items>
             <v-btn
-                    flat dark to="songs">
+                    flat dark :to="{name: 'songs'}">
                 Browse
             </v-btn>
         </v-toolbar-items>
@@ -18,12 +18,12 @@
         <v-toolbar-items>
             <v-btn
                     v-if="!$store.state.isUserLoggedIn"
-                    flat dark to="login">
+                    flat dark :to="{name: 'login'}">
                 Login
             </v-btn>
             <v-btn
                     v-if="!$store.state.isUserLoggedIn"
-                    flat dark to="register">
+                    flat dark :to="{name: 'register'}">
                     Sign UP
             </v-btn>
             <v-btn
