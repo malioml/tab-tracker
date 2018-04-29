@@ -2,6 +2,7 @@
     <v-layout row wrap>
         <v-flex xs6>
             <songs-bookmarks></songs-bookmarks>
+            <recently-viewed-songs></recently-viewed-songs>
         </v-flex>
         <v-flex xs6>
             <songs-search-panel></songs-search-panel>
@@ -14,13 +15,15 @@
 import SongsPanel from './SongsPanel'
 import SongsSearchPanel from './SongsSearchPanel'
 import SongsBookmarks from './SongsBookmarks'
+import RecentlyViewedSongs from './RecentlyViewedSongs'
 import SongService from '@/services/SongsService'
 
 export default {
   components: {
     SongsPanel,
     SongsSearchPanel,
-    SongsBookmarks
+    SongsBookmarks,
+    RecentlyViewedSongs
   },
   data () {
     return {

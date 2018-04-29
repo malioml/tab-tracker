@@ -72,5 +72,5 @@ module.exports = {
         error: 'an error has occured trying to delete the bookmark'
       })
     }
-  },
+  }
 }
